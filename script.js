@@ -32,7 +32,7 @@ function printSummary() {
 // printing in simplest way with popup new windows
 function printContents() {
     var docHead = document.head.outerHTML;
-    var printContents = document.getElementById("printSummary").outerHTML;
+    var printContents = document.getElementById("myDivToPrint").outerHTML;
     console.log(printContents);
     var winAttr = "location=yes, statusbar=no, menubar=no, titlebar=no, toolbar=no,dependent=no, width=865, height=600, resizable=no, screenX=200, screenY=200, personalbar=no, scrollbars=yes";
     var newWin = window.open("", "_blank", winAttr);
