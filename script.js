@@ -1,8 +1,6 @@
-(function() {
-
 // javascript print within the browser (no new windows) using frame layout
 // replace myDivToPrint with your div ID from HTML page
-function printSummary() {
+function printTable() {
     var docHead = document.head.outerHTML;
     var printContents = document.getElementById("myDivToPrint").outerHTML;
     var frame1 = document.createElement('iframe');
@@ -24,13 +22,12 @@ function printSummary() {
 
     console.log(docHead);
 
-    // printContents();
 
 }
 
 
 // printing in simplest way with popup new windows
-function printContents() {
+function printDivContent() {
     var docHead = document.head.outerHTML;
     var printContents = document.getElementById("myDivToPrint").outerHTML;
     console.log(printContents);
@@ -42,4 +39,3 @@ function printContents() {
     writeDoc.close();
     newWin.focus();
 }
-})();
